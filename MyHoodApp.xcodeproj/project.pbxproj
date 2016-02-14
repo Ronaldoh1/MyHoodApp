@@ -15,6 +15,7 @@
 		FB4400D21C6C749A0089AD0F /* MyHoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400D11C6C749A0089AD0F /* MyHoodAppTests.swift */; };
 		FB4400DD1C6C749A0089AD0F /* MyHoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400DC1C6C749A0089AD0F /* MyHoodAppUITests.swift */; };
 		FB4400EC1C6C750C0089AD0F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400EB1C6C750C0089AD0F /* Post.swift */; };
+		FB4400F41C712E3E0089AD0F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400F31C712E3E0089AD0F /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FB4400DC1C6C749A0089AD0F /* MyHoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoodAppUITests.swift; sourceTree = "<group>"; };
 		FB4400DE1C6C749A0089AD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB4400EB1C6C750C0089AD0F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FB4400F31C712E3E0089AD0F /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		FB4400BB1C6C74990089AD0F /* MyHoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB4400EE1C712DB70089AD0F /* View */,
 				FB4400EA1C6C74F80089AD0F /* Model */,
 				FB4400BC1C6C74990089AD0F /* AppDelegate.swift */,
 				FB4400BE1C6C74990089AD0F /* ViewController.swift */,
@@ -134,6 +137,14 @@
 				FB4400EB1C6C750C0089AD0F /* Post.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FB4400EE1C712DB70089AD0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB4400F31C712E3E0089AD0F /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				FB4400EC1C6C750C0089AD0F /* Post.swift in Sources */,
 				FB4400BF1C6C74990089AD0F /* ViewController.swift in Sources */,
 				FB4400BD1C6C74990089AD0F /* AppDelegate.swift in Sources */,
+				FB4400F41C712E3E0089AD0F /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				FB4400E31C6C749A0089AD0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB4400E41C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodAppTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				FB4400E61C6C749A0089AD0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB4400E71C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				FB4400E91C6C749A0089AD0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
