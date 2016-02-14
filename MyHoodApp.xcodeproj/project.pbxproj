@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB4400BD1C6C74990089AD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400BC1C6C74990089AD0F /* AppDelegate.swift */; };
+		FB4400BF1C6C74990089AD0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400BE1C6C74990089AD0F /* ViewController.swift */; };
+		FB4400C21C6C74990089AD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4400C01C6C74990089AD0F /* Main.storyboard */; };
+		FB4400C41C6C74990089AD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4400C31C6C74990089AD0F /* Assets.xcassets */; };
+		FB4400C71C6C74990089AD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4400C51C6C74990089AD0F /* LaunchScreen.storyboard */; };
+		FB4400D21C6C749A0089AD0F /* MyHoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400D11C6C749A0089AD0F /* MyHoodAppTests.swift */; };
+		FB4400DD1C6C749A0089AD0F /* MyHoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400DC1C6C749A0089AD0F /* MyHoodAppUITests.swift */; };
+		FB4400EC1C6C750C0089AD0F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400EB1C6C750C0089AD0F /* Post.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB4400CE1C6C749A0089AD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB4400B11C6C74990089AD0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4400B81C6C74990089AD0F;
+			remoteInfo = MyHoodApp;
+		};
+		FB4400D91C6C749A0089AD0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB4400B11C6C74990089AD0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4400B81C6C74990089AD0F;
+			remoteInfo = MyHoodApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB4400B91C6C74990089AD0F /* MyHoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4400BC1C6C74990089AD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB4400BE1C6C74990089AD0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB4400C11C6C74990089AD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB4400C31C6C74990089AD0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB4400C61C6C74990089AD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB4400C81C6C74990089AD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4400CD1C6C749A0089AD0F /* MyHoodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHoodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4400D11C6C749A0089AD0F /* MyHoodAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoodAppTests.swift; sourceTree = "<group>"; };
+		FB4400D31C6C749A0089AD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4400D81C6C749A0089AD0F /* MyHoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4400DC1C6C749A0089AD0F /* MyHoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoodAppUITests.swift; sourceTree = "<group>"; };
+		FB4400DE1C6C749A0089AD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4400EB1C6C750C0089AD0F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB4400B61C6C74990089AD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4400CA1C6C749A0089AD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4400D51C6C749A0089AD0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB4400B01C6C74990089AD0F = {
+			isa = PBXGroup;
+			children = (
+				FB4400BB1C6C74990089AD0F /* MyHoodApp */,
+				FB4400D01C6C749A0089AD0F /* MyHoodAppTests */,
+				FB4400DB1C6C749A0089AD0F /* MyHoodAppUITests */,
+				FB4400BA1C6C74990089AD0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB4400BA1C6C74990089AD0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB4400B91C6C74990089AD0F /* MyHoodApp.app */,
+				FB4400CD1C6C749A0089AD0F /* MyHoodAppTests.xctest */,
+				FB4400D81C6C749A0089AD0F /* MyHoodAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB4400BB1C6C74990089AD0F /* MyHoodApp */ = {
+			isa = PBXGroup;
+			children = (
+				FB4400EA1C6C74F80089AD0F /* Model */,
+				FB4400BC1C6C74990089AD0F /* AppDelegate.swift */,
+				FB4400BE1C6C74990089AD0F /* ViewController.swift */,
+				FB4400C01C6C74990089AD0F /* Main.storyboard */,
+				FB4400C31C6C74990089AD0F /* Assets.xcassets */,
+				FB4400C51C6C74990089AD0F /* LaunchScreen.storyboard */,
+				FB4400C81C6C74990089AD0F /* Info.plist */,
+			);
+			path = MyHoodApp;
+			sourceTree = "<group>";
+		};
+		FB4400D01C6C749A0089AD0F /* MyHoodAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB4400D11C6C749A0089AD0F /* MyHoodAppTests.swift */,
+				FB4400D31C6C749A0089AD0F /* Info.plist */,
+			);
+			path = MyHoodAppTests;
+			sourceTree = "<group>";
+		};
+		FB4400DB1C6C749A0089AD0F /* MyHoodAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB4400DC1C6C749A0089AD0F /* MyHoodAppUITests.swift */,
+				FB4400DE1C6C749A0089AD0F /* Info.plist */,
+			);
+			path = MyHoodAppUITests;
+			sourceTree = "<group>";
+		};
+		FB4400EA1C6C74F80089AD0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB4400EB1C6C750C0089AD0F /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB4400B81C6C74990089AD0F /* MyHoodApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4400E11C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodApp" */;
+			buildPhases = (
+				FB4400B51C6C74990089AD0F /* Sources */,
+				FB4400B61C6C74990089AD0F /* Frameworks */,
+				FB4400B71C6C74990089AD0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyHoodApp;
+			productName = MyHoodApp;
+			productReference = FB4400B91C6C74990089AD0F /* MyHoodApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB4400CC1C6C749A0089AD0F /* MyHoodAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4400E41C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodAppTests" */;
+			buildPhases = (
+				FB4400C91C6C749A0089AD0F /* Sources */,
+				FB4400CA1C6C749A0089AD0F /* Frameworks */,
+				FB4400CB1C6C749A0089AD0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB4400CF1C6C749A0089AD0F /* PBXTargetDependency */,
+			);
+			name = MyHoodAppTests;
+			productName = MyHoodAppTests;
+			productReference = FB4400CD1C6C749A0089AD0F /* MyHoodAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB4400D71C6C749A0089AD0F /* MyHoodAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB4400E71C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodAppUITests" */;
+			buildPhases = (
+				FB4400D41C6C749A0089AD0F /* Sources */,
+				FB4400D51C6C749A0089AD0F /* Frameworks */,
+				FB4400D61C6C749A0089AD0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB4400DA1C6C749A0089AD0F /* PBXTargetDependency */,
+			);
+			name = MyHoodAppUITests;
+			productName = MyHoodAppUITests;
+			productReference = FB4400D81C6C749A0089AD0F /* MyHoodAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB4400B11C6C74990089AD0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Solstice;
+				TargetAttributes = {
+					FB4400B81C6C74990089AD0F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FB4400CC1C6C749A0089AD0F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FB4400B81C6C74990089AD0F;
+					};
+					FB4400D71C6C749A0089AD0F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FB4400B81C6C74990089AD0F;
+					};
+				};
+			};
+			buildConfigurationList = FB4400B41C6C74990089AD0F /* Build configuration list for PBXProject "MyHoodApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB4400B01C6C74990089AD0F;
+			productRefGroup = FB4400BA1C6C74990089AD0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB4400B81C6C74990089AD0F /* MyHoodApp */,
+				FB4400CC1C6C749A0089AD0F /* MyHoodAppTests */,
+				FB4400D71C6C749A0089AD0F /* MyHoodAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB4400B71C6C74990089AD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4400C71C6C74990089AD0F /* LaunchScreen.storyboard in Resources */,
+				FB4400C41C6C74990089AD0F /* Assets.xcassets in Resources */,
+				FB4400C21C6C74990089AD0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4400CB1C6C749A0089AD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4400D61C6C749A0089AD0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB4400B51C6C74990089AD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4400EC1C6C750C0089AD0F /* Post.swift in Sources */,
+				FB4400BF1C6C74990089AD0F /* ViewController.swift in Sources */,
+				FB4400BD1C6C74990089AD0F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4400C91C6C749A0089AD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4400D21C6C749A0089AD0F /* MyHoodAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4400D41C6C749A0089AD0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4400DD1C6C749A0089AD0F /* MyHoodAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB4400CF1C6C749A0089AD0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB4400B81C6C74990089AD0F /* MyHoodApp */;
+			targetProxy = FB4400CE1C6C749A0089AD0F /* PBXContainerItemProxy */;
+		};
+		FB4400DA1C6C749A0089AD0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB4400B81C6C74990089AD0F /* MyHoodApp */;
+			targetProxy = FB4400D91C6C749A0089AD0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB4400C01C6C74990089AD0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4400C11C6C74990089AD0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB4400C51C6C74990089AD0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB4400C61C6C74990089AD0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB4400DF1C6C749A0089AD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB4400E01C6C749A0089AD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB4400E21C6C749A0089AD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyHoodApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Solstice.MyHoodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB4400E31C6C749A0089AD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyHoodApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Solstice.MyHoodApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB4400E51C6C749A0089AD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyHoodAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Solstice.MyHoodAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyHoodApp.app/MyHoodApp";
+			};
+			name = Debug;
+		};
+		FB4400E61C6C749A0089AD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyHoodAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Solstice.MyHoodAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyHoodApp.app/MyHoodApp";
+			};
+			name = Release;
+		};
+		FB4400E81C6C749A0089AD0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyHoodAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Solstice.MyHoodAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyHoodApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FB4400E91C6C749A0089AD0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyHoodAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Solstice.MyHoodAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyHoodApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB4400B41C6C74990089AD0F /* Build configuration list for PBXProject "MyHoodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4400DF1C6C749A0089AD0F /* Debug */,
+				FB4400E01C6C749A0089AD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB4400E11C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4400E21C6C749A0089AD0F /* Debug */,
+				FB4400E31C6C749A0089AD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB4400E41C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4400E51C6C749A0089AD0F /* Debug */,
+				FB4400E61C6C749A0089AD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB4400E71C6C749A0089AD0F /* Build configuration list for PBXNativeTarget "MyHoodAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4400E81C6C749A0089AD0F /* Debug */,
+				FB4400E91C6C749A0089AD0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB4400B11C6C74990089AD0F /* Project object */;
+}
