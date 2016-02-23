@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2209A51C7A38DC00C09B65 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2209A41C7A38DC00C09B65 /* DataService.swift */; };
 		FB4400BD1C6C74990089AD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400BC1C6C74990089AD0F /* AppDelegate.swift */; };
 		FB4400BF1C6C74990089AD0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4400BE1C6C74990089AD0F /* ViewController.swift */; };
 		FB4400C21C6C74990089AD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4400C01C6C74990089AD0F /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2209A41C7A38DC00C09B65 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FB4400B91C6C74990089AD0F /* MyHoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4400BC1C6C74990089AD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB4400BE1C6C74990089AD0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB2209A31C7A38BF00C09B65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FB2209A41C7A38DC00C09B65 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		FB4400B01C6C74990089AD0F = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		FB4400BB1C6C74990089AD0F /* MyHoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB2209A31C7A38BF00C09B65 /* Services */,
 				FB4400F51C713D140089AD0F /* Controller */,
 				FB4400EE1C712DB70089AD0F /* View */,
 				FB4400EA1C6C74F80089AD0F /* Model */,
@@ -135,7 +146,6 @@
 		FB4400EA1C6C74F80089AD0F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB4400C01C6C74990089AD0F /* Main.storyboard */,
 				FB4400EB1C6C750C0089AD0F /* Post.swift */,
 			);
 			name = Model;
@@ -145,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FB4400F31C712E3E0089AD0F /* PostCell.swift */,
+				FB4400C01C6C74990089AD0F /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -292,6 +303,7 @@
 				FB4400EC1C6C750C0089AD0F /* Post.swift in Sources */,
 				FB4400BF1C6C74990089AD0F /* ViewController.swift in Sources */,
 				FB4400F71C713D5C0089AD0F /* AddPostVC.swift in Sources */,
+				FB2209A51C7A38DC00C09B65 /* DataService.swift in Sources */,
 				FB4400BD1C6C74990089AD0F /* AppDelegate.swift in Sources */,
 				FB4400F41C712E3E0089AD0F /* PostCell.swift in Sources */,
 			);

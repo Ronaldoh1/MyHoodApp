@@ -16,19 +16,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        var post = Post(imagePath: "", title: "Post 1", description: "description")
-        var post2 = Post(imagePath: "", title: "Post 2", description: "description 2")
-        var post3 = Post(imagePath: "", title: "Post 3", description: " the read deal")
-        
-        postsArray.append(post)
-        postsArray.append(post2)
-        postsArray.append(post3)
+        DataService.instance.loadedPosts
+     NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPostsLoaded:", name: "onPostsLoaded", object: nil)
         
         tableView.reloadData()
+        
+        print(DataService.instance.loadedPosts.count)
     }
 
 
+  //Mark - Notifications
+    func onPostsLoaded(notif: AnyObject){
+        tableView.reloadData()
+    }
  //Mark - Delegate
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -38,13 +38,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return postsArray.count
+        return DataService.instance.loadedPosts.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
        let identifier = "cell"
         
-        let post:Post = postsArray[indexPath.row] as Post
+        let post = DataService.instance.loadedPosts[indexPath.row]
         
         //if there is cell available to reuse.
         if let cell: PostCell = tableView.dequeueReusableCellWithIdentifier(identifier) as?PostCell {

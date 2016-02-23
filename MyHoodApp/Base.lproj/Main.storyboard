@@ -188,17 +188,21 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCancelButtonTapped:" destination="TXO-q4-g8F" eventType="touchUpInside" id="Rj7-qu-89j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="6YQ-lF-qGZ" secondAttribute="bottom" constant="8" id="37j-re-1X0"/>
+                                    <constraint firstAttribute="height" constant="64" id="9iW-42-UMp"/>
                                     <constraint firstItem="6YQ-lF-qGZ" firstAttribute="leading" secondItem="KVT-xj-jhf" secondAttribute="leading" constant="8" id="DgP-NI-H0j"/>
                                     <constraint firstItem="zQb-T6-tb6" firstAttribute="centerX" secondItem="KVT-xj-jhf" secondAttribute="centerX" id="UEP-06-DCJ"/>
                                     <constraint firstAttribute="bottom" secondItem="zQb-T6-tb6" secondAttribute="bottom" constant="8" id="ubh-gg-Hgo"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="fov-We-7gO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fov-We-7gO">
                                 <rect key="frame" x="180" y="89" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="38D-JB-lhi"/>
@@ -211,10 +215,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-cN-Stk">
-                                <rect key="frame" x="180" y="89" width="240" height="240"/>
-                                <state key="normal" title="Add Picture"/>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sfx-UT-3s2">
                                 <rect key="frame" x="20" y="354" width="560" height="40"/>
                                 <constraints>
@@ -224,7 +224,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkC-rR-ic9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkC-rR-ic9">
                                 <rect key="frame" x="20" y="409" width="560" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="u11-g2-8TR"/>
@@ -242,6 +242,16 @@
                                 <state key="normal" title="Make Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onMakePostButtonTapped:" destination="TXO-q4-g8F" eventType="touchUpInside" id="8RG-ix-NPF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-cN-Stk">
+                                <rect key="frame" x="180" y="89" width="240" height="240"/>
+                                <state key="normal" title="Add Picture"/>
+                                <connections>
+                                    <action selector="onAddImageButtonTapped:" destination="TXO-q4-g8F" eventType="touchUpInside" id="ENo-PQ-2f9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -269,6 +279,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="npd-x4-1BN" secondAttribute="trailing" id="veQ-BY-Dnl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="AkC-rR-ic9" id="JM0-HB-s1M"/>
+                        <outlet property="postImage" destination="fov-We-7gO" id="vi3-Mb-cnI"/>
+                        <outlet property="titleField" destination="Sfx-UT-3s2" id="5Ks-MP-f9K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nA-gj-5Fj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
